@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - RegulusFit</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <section class="form-section">
+    <h1>Formulario de Inscripción</h1>
+
+    <p id="planSeleccionado"></p>
+
+    <form id="registroForm">
+
+      <label>Tipo de Identificación</label>
+      <select required>
+        <option value="">Seleccione</option>
+        <option>CC</option>
+        <option>TI</option>
+        <option>Pasaporte</option>
+      </select>
+
+      <label>Número de Documento</label>
+      <input type="text" required>
+
+      <label>Nombre Completo</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Celular</label>
+      <input type="tel" required>
+
+      <label>Fecha de Nacimiento</label>
+      <input type="date" required>
+
+      <button type="submit">Registrarme</button>
+
+    </form>
+  </section>
+
+  <script src="scripts/registro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>RegulusFit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+  <img src="images/logo.png" alt="Logo RegulusFit" class="logo-img">
+</div>
+
+    <nav class="nav">
+      <button class="btn-link" onclick="scrollToSection('about')">Conócenos</button>
+      <button class="btn-link" onclick="scrollToSection('planes')">Planes</button>
+      <button class="btn-link" onclick="scrollToSection('merch')">Merch</button>
+      <button class="btn-primary" onclick="scrollToSection('planes')">Únete ahora</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Entrena como un campeón</h1>
+        <p>RegulusFit es tu espacio en Colombia para lograr fuerza, disciplina y estilo.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('planes')">Únete ahora</button>
+          <button class="btn-secondary" onclick="scrollToSection('about')">Conócenos</button>
+        </div>
+      </div>
+    </section>
+<!-- ======= PROMOCIÓN PRINCIPAL ======= -->
+<section class="promo-section">
+  <img src="images/promo4.png" alt="Promoción RegulusFit" class="promo-banner">
+</section>
+
+    <section class="info" id="about">
+  <h2>¿Qué es RegulusFit?</h2>
+  <div class="info-content">
+    <div class="info-text">
+      <p>Gimnasio físico enfocado en entrenamiento real, comunidad y crecimiento personal.
+         Más que un lugar, es una mentalidad.</p>
+        <!-- MAPA DE UBICACIÓN -->
+<div class="map-container">
+
+  <!-- Mapa incrustado de Google Maps -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.067493472785!2d-76.4257647353519!3d3.220611871964373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a766652819add%3A0x2caeb98013517d90!2sPuerto%20Tejada%2C%20Cauca!5e0!3m2!1ses-419!2sco!4v1778446759273!5m2!1ses-419!2sco"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+
+</div>
+      <button class="btn-outline" onclick="handleContact()">Contáctanos</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section class="gallery">
+
+  <h2>Galería RegulusFit</h2>
+
+  <div class="gallery-container">
+
+    <img src="images/gym1.jpg" alt="Entrenamiento 1">
+    <img src="images/gym2.jpg" alt="Entrenamiento 2">
+    <img src="images/gym3.jpg" alt="Entrenamiento 3">
+    <img src="images/gym4.jpg" alt="Entrenamiento 4">
+    <img src="images/gym5.jpg" alt="Entrenamiento 5">
+    <img src="images/gym6.jpg" alt="Entrenamiento 6">
+    <img src="images/gym7.jpg" alt="Entrenamiento 7">
+    <img src="images/gym8.jpg" alt="Entrenamiento 8">
+    <img src="images/gym9.jpg" alt="Entrenamiento 9">
+    <img src="images/gym10.jpg" alt="Entrenamiento 10">
+  </div>
+
+</section>
+
+<section class="planes" id="planes">
+  <h2 class="titulo-planes">Nuestros Planes</h2>
+  <div class="contenedor-planes">
+    <div class="plan">
+      <h3>Plan Básico</h3>
+      <p class="precio">$99.000 / mes</p>
+      <ul>
+        <li>Acceso ilimitado al gimnasio</li>
+        <li>Clases grupales estándar</li>
+        <li>Asesoría inicial con entrenador</li>
+        <li>App para seguimiento de rutinas</li>
+      </ul>
+      <button onclick="window.location.href='registro.html?plan=basico'">Seleccionar</button>
+    </div>
+
+    <div class="plan destacado">
+      <h3>Plan Pro</h3>
+      <p class="precio">$149.000 / mes</p>
+      <ul>
+        <li>Todo lo del plan Básico</li>
+        <li>Rutina personalizada mensual</li>
+        <li>Seguimiento por coach</li>
+        <li>Descuentos en productos RegulusFit</li>
+        <li>Clases premium</li>
+      </ul>
+      <button onclick="window.location.href='registro.html?plan=pro'">Seleccionar</button>
+    </div>
+
+    <div class="plan">
+      <h3>Plan Elite</h3>
+      <p class="precio">$249.000 / mes</p>
+      <ul>
+        <li>Todo lo del plan Pro</li>
+        <li>Coach dedicado 1 a 1</li>
+        <li>Plan nutricional personalizado</li>
+        <li>Zona VIP y eventos especiales</li>
+        <li>Merchandising exclusivo</li>
+      </ul>
+      <button onclick="window.location.href='registro.html?plan=elite'">Seleccionar</button>
+    </div>
+  </div>
+</section>
+
+    <section class="merch" id="merch">
+      <h2>Merch</h2>
+      <p>Próximamente: camisetas, botellas y más. Mantente atento.</p>
+      <button class="btn-secondary" onclick="alert('Próximamente merch')">Ver colección</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 RegulusFit. Entrena con propósito.</p>
+    <button class="btn-link" onclick="handleContact()">Contacto</button>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
