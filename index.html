@@ -16,7 +16,12 @@
       <button class="btn-link" onclick="scrollToSection('about')">Conócenos</button>
       <button class="btn-link" onclick="scrollToSection('planes')">Planes</button>
       <button class="btn-link" onclick="scrollToSection('merch')">Merch</button>
-      <button class="btn-primary" onclick="scrollToSection('planes')">Únete ahora</button>
+      <button class="btn-primary"
+onclick="window.location.href='planes.html'">
+
+  Únete ahora
+
+</button>
     </nav>
   </header>
 
@@ -26,7 +31,12 @@
         <h1>Entrena como un campeón</h1>
         <p>RegulusFit es tu espacio en Colombia para lograr fuerza, disciplina y estilo.</p>
         <div class="hero-buttons">
-          <button class="btn-primary" onclick="scrollToSection('planes')">Únete ahora</button>
+          <button class="btn-primary"
+onclick="window.location.href='planes.html'">
+
+  Únete ahora
+
+</button>
           <button class="btn-secondary" onclick="scrollToSection('about')">Conócenos</button>
         </div>
       </div>
@@ -37,10 +47,16 @@
 </section>
 
     <section class="info" id="about">
-  <h2>¿Qué es RegulusFit?</h2>
+  <h2>Conócenos</h2>
   <div class="info-content">
     <div class="info-text">
-      <p>Gimnasio físico enfocado en entrenamiento real, comunidad y crecimiento personal.
+      <p>En RegulusFit creemos que el entrenamiento va más allá de levantar peso; representa disciplina, constancia y superación personal. Nuestro gimnasio nace con el objetivo de brindar un espacio moderno, motivador y accesible para todas las personas que desean transformar su estilo de vida a través del fitness y el bienestar físico.
+
+Ubicados en el municipio de Puerto Tejada, Cauca, buscamos convertirnos en una referencia local en entrenamiento deportivo, ofreciendo un ambiente profesional, cómodo y equipado para que cada usuario pueda alcanzar sus metas de manera segura y eficiente.
+
+RegulusFit combina entrenamiento, motivación y tecnología en una experiencia diseñada para principiantes y atletas experimentados. Nuestra identidad está inspirada en la fuerza, la determinación y el crecimiento personal, reflejados en cada área del gimnasio y en nuestra plataforma digital.
+
+Nuestro compromiso es construir una comunidad fitness donde cada integrante se sienta acompañado en su proceso de cambio físico y mental, promoviendo hábitos saludables, disciplina y pasión por el deporte.
          Más que un lugar, es una mentalidad.</p>
         <!-- MAPA DE UBICACIÓN -->
 <div class="map-container">
@@ -56,7 +72,13 @@
   </iframe>
 
 </div>
-      <button class="btn-outline" onclick="handleContact()">Contáctanos</button>
+      <button class="btn-outline"
+onclick="window.location.href='contacto.html'">
+
+  Contactanos
+
+</button>
+  </footer>
     </div>
   </div>
 </section>
@@ -70,14 +92,14 @@
 
     <img src="images/gym1.jpg" alt="Entrenamiento 1">
     <img src="images/gym2.jpg" alt="Entrenamiento 2">
-    <img src="images/gym3.jpg" alt="Entrenamiento 3">
+    <img src="images/gym3.png" alt="Entrenamiento 3">
     <img src="images/gym4.jpg" alt="Entrenamiento 4">
     <img src="images/gym5.jpg" alt="Entrenamiento 5">
-    <img src="images/gym6.jpg" alt="Entrenamiento 6">
-    <img src="images/gym7.jpg" alt="Entrenamiento 7">
-    <img src="images/gym8.jpg" alt="Entrenamiento 8">
-    <img src="images/gym9.jpg" alt="Entrenamiento 9">
-    <img src="images/gym10.jpg" alt="Entrenamiento 10">
+    <img src="images/gym6.png" alt="Entrenamiento 6">
+    <img src="images/gym7.png" alt="Entrenamiento 7">
+    <img src="images/gym8.png" alt="Entrenamiento 8">
+    <img src="images/gym9.png" alt="Entrenamiento 9">
+    <img src="images/gym10.png" alt="Entrenamiento 10">
   </div>
 
 </section>
@@ -87,19 +109,19 @@
   <div class="contenedor-planes">
     <div class="plan">
       <h3>Plan Básico</h3>
-      <p class="precio">$99.000 / mes</p>
+      <p class="precio">$60.000 / mes</p>
       <ul>
         <li>Acceso ilimitado al gimnasio</li>
         <li>Clases grupales estándar</li>
         <li>Asesoría inicial con entrenador</li>
         <li>App para seguimiento de rutinas</li>
       </ul>
-      <button onclick="window.location.href='registro.html?plan=basico'">Seleccionar</button>
+      <button class="btn-plan" onclick="window.location.href='registro.html?plan=basico'">Seleccionar</button>
     </div>
 
     <div class="plan destacado">
       <h3>Plan Pro</h3>
-      <p class="precio">$149.000 / mes</p>
+      <p class="precio">$99.000 / mes</p>
       <ul>
         <li>Todo lo del plan Básico</li>
         <li>Rutina personalizada mensual</li>
@@ -107,12 +129,12 @@
         <li>Descuentos en productos RegulusFit</li>
         <li>Clases premium</li>
       </ul>
-      <button onclick="window.location.href='registro.html?plan=pro'">Seleccionar</button>
+      <button class="btn-plan" onclick="window.location.href='registro.html?plan=pro'">Seleccionar</button>
     </div>
 
     <div class="plan">
       <h3>Plan Elite</h3>
-      <p class="precio">$249.000 / mes</p>
+      <p class="precio">$149.000 / mes</p>
       <ul>
         <li>Todo lo del plan Pro</li>
         <li>Coach dedicado 1 a 1</li>
@@ -120,21 +142,26 @@
         <li>Zona VIP y eventos especiales</li>
         <li>Merchandising exclusivo</li>
       </ul>
-      <button onclick="window.location.href='registro.html?plan=elite'">Seleccionar</button>
+      <button class="btn-plan" onclick="window.location.href='registro.html?plan=elite'">Seleccionar</button>
     </div>
   </div>
 </section>
 
     <section class="merch" id="merch">
       <h2>Merch</h2>
-      <p>Próximamente: camisetas, botellas y más. Mantente atento.</p>
-      <button class="btn-secondary" onclick="alert('Próximamente merch')">Ver colección</button>
+      <p>Próximamente: camisetas compresion, botellas y más. Mantente atento.</p>
+      <button class="btn-link" onclick="window.location.href='merch.html'">Ver colección</button>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>© 2025 RegulusFit. Entrena con propósito.</p>
-    <button class="btn-link" onclick="handleContact()">Contacto</button>
+    <button class="btn-link"
+onclick="window.location.href='contacto.html'">
+
+  Contacto
+
+</button>
   </footer>
 
   <script src="scripts/main.js"></script>
