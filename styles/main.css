@@ -683,3 +683,26 @@ section {
 html {
   scroll-behavior: smooth;
 }
+
+.contact-card img {
+  width: 90px; /* tamaño fijo */
+  height: 90px;
+  object-fit: contain; /* evita deformación */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(51,102,255,0.15);
+}
