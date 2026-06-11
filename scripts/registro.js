@@ -15,10 +15,22 @@ if (plan) {
 
 const form = document.getElementById("registroForm");
 
+/* Cuando el usuario envía el formulario */
 form.addEventListener("submit", function(e) {
-  e.preventDefault(); // evita recargar la página
 
-  alert("Registro exitoso 💪 Bienvenido a RegulusFit");
+  e.preventDefault(); // evita que la página se recargue
 
-  form.reset(); // limpia el formulario
+  /* Si existe un plan seleccionado */
+  if(plan){
+
+    window.location.href =
+      "bienvenida.html?plan=" + plan;
+
+  } else {
+
+    window.location.href =
+      "bienvenida.html";
+
+  }
+
 });

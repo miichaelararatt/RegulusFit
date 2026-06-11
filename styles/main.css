@@ -34,9 +34,12 @@ body {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+    width: 200px;
+}
+
+.logo-img {
+    width: 1400px;      /* tamaño del logo */
+    height: auto;      /* mantiene proporciones */
 }
 
 .nav {
@@ -277,8 +280,8 @@ button {
 
 .promo-banner {
   width: 100%;
-  max-width: 1556px; /* ancho máximo  */
-   /* alto máximo  */
+  height: 850px;
+  max-width: 2556px; /* ancho máximo  */
   border-radius: 15px; /* bordes redondeados elegantes */
   overflow: hidden; /* evita que la imagen sobresalga del borde redondeado */
   box-shadow: 0 0 25px rgba(0, 102, 255, 0.3); /* leve resplandor azul */
@@ -463,6 +466,7 @@ button {
 
 /* ===== CONTENEDOR DEL MAPA ===== */
 .map-container {
+  max-width: 2556px;
   margin-top: 30px; /* separa el mapa del texto */
   border-radius: 15px; /* bordes redondeados */
   overflow: hidden; /* evita que el iframe sobresalga */
@@ -705,4 +709,104 @@ html {
   width: 250px;
   text-align: center;
   box-shadow: 0 0 20px rgba(51,102,255,0.15);
+}
+
+/* Contenedor de las tarjetas */
+.valores-grid{
+  display: flex; /* coloca las tarjetas en fila */
+  justify-content: center; /* centra las tarjetas */
+  gap: 20px; /* separación entre tarjetas */
+  flex-wrap: wrap; /* baja las tarjetas si no caben */
+  margin: 40px 0;
+}
+
+/* Tarjeta individual */
+.valor-card{
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 25px;
+  width: 180px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Animación al pasar el mouse */
+.valor-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(51,102,255,0.4);
+}
+
+/* Tamaño de los iconos */
+.icono{
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Contenedor de estadísticas */
+.stats{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+/* Cada estadística */
+.stat{
+  text-align: center;
+}
+
+/* Número principal */
+.stat h2{
+  color: #3366ff;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Texto descriptivo */
+.stat p{
+  margin-top: 10px;
+}
+
+/* ==========================
+   PANTALLA DE BIENVENIDA
+========================== */
+
+.welcome-container{
+
+  max-width: 700px;
+
+  margin: 100px auto;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.05);
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow:
+  0 0 20px rgba(51,102,255,0.3);
+
+}
+
+.welcome-container h1{
+
+  color: #3366ff;
+
+  margin-bottom: 20px;
+
+}
+
+.welcome-container h2{
+
+  margin-bottom: 20px;
+
+}
+
+.welcome-container p{
+
+  margin-bottom: 15px;
+
 }

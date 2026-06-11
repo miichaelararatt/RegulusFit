@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bienvenido | RegulusFit</title>
+
+<link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+<div class="welcome-container">
+
+  <h1>🎉 ¡Bienvenido a RegulusFit!</h1>
+
+  <h2 id="planElegido">
+    Cargando plan...
+  </h2>
+
+  <p>
+
+    Tu solicitud fue enviada correctamente.
+
+  </p>
+
+  <p>
+
+    Uno de nuestros asesores se pondrá en contacto contigo para finalizar tu inscripción.
+
+  </p>
+
+  <button
+    class="btn-primary"
+    onclick="window.location.href='index.html'">
+
+    Volver al inicio
+
+  </button>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const plan = params.get("plan");
+
+const planTexto =
+document.getElementById("planElegido");
+
+if(plan){
+
+  planTexto.textContent =
+  "🏆 Plan seleccionado: " +
+  plan.toUpperCase();
+
+}else{
+
+  planTexto.textContent =
+  "🏆 Plan seleccionado: REGULUSFIT";
+
+}
+
+</script>
+
+</body>
+</html>
